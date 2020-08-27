@@ -14,40 +14,28 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+        .gradient {
+            /*background: linear-gradient(90deg, #d53369 0%, #daae51 100%);*/
+            background: linear-gradient(90deg, #0c788c 0%, #b375de 100%);
+            /*background: linear-gradient(90deg, #000000 0%, #757575 100%);*/
+        }
+    </style>
 </head>
-<body class="bg-gray-100 h-screen antialiased leading-none">
+<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <div id="app">
-        <nav class="bg-blue-900 shadow mb-8 py-6">
-            <div class="container mx-auto px-6 md:px-0">
-                <div class="flex items-center justify-center">
-                    <div class="mr-6">
-                        <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
-                            {{ config('app.name', 'Danidoble') }}
-                        </a>
-                    </div>
-                    <div class="flex-1 text-right">
-                        @guest
-                            <a class="no-underline hover:underline text-gray-300 text-sm p-3" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            @if (Route::has('register'))
-                                <a class="no-underline hover:underline text-gray-300 text-sm p-3" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            @endif
-                        @else
-                            <span class="text-gray-300 text-sm pr-4">{{ Auth::user()->name }}</span>
+        @include('layouts.menu')
+        <div class="mx-auto mt-24 md:mt-18">
+            @yield('content')
 
-                            <a href="{{ route('logout') }}"
-                               class="no-underline hover:underline text-gray-300 text-sm p-3"
-                               onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-                                {{ csrf_field() }}
-                            </form>
-                        @endguest
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        @yield('content')
+        </div>
     </div>
+    @include('layouts.footer')
+
+    <script src="{{ asset('js/all.js') }}" defer></script>
+    @yield('scripts')
 </body>
 </html>
