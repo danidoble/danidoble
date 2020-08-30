@@ -11,7 +11,6 @@
                 <h1 class="my-4 text-5xl font-bold leading-tight">Todo lo que te imagines puede ser realidad!</h1>
                 <p class="leading-normal text-2xl mb-8">Nada mas que espectacular!</p>
 
-
                 <button
                     class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">
                     Subscribete

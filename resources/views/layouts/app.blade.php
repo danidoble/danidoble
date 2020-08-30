@@ -25,7 +25,7 @@
         }
     </style>
 </head>
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+<body class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <div id="app">
         @include('layouts.menu')
         <div class="mx-auto mt-24 md:mt-18">
