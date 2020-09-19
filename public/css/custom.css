@@ -1,0 +1,9 @@
+.gradient{
+    background: linear-gradient(90deg, #0c788c 0%, #b375de 100%);
+}
+.gradient-red {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+.gradient-dark {
+    background: linear-gradient(90deg, #000000 0%, #757575 100%);
+}

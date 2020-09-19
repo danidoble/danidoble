@@ -5,8 +5,7 @@
         <div class="w-full flex flex-col md:flex-row py-6">
             <div class="flex-1 mb-6">
                 <a class="text-gray-800 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-                    @include('layouts.svg.logo')
-                    {{ config('app.name', 'danidoble') }}
+                    @include('layouts.svg.danidoble')
                 </a>
             </div>
             <div class="flex-1">
@@ -76,5 +75,7 @@
         <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a>
         from
         <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+
+        <a href='https://www.freepik.com/vectors/people'>People vector created by pikisuperstar - www.freepik.com</a>
     </div>
 </footer>

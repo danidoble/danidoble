@@ -14,15 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::post('/login','API\UserController@login');
-Route::post('user','API\UserController@store');
-
-Route::middleware('auth:api')->group(function(){
-    //Route::resource('user','API\UserController');
-    Route::get('user','API\UserController@index');
-    Route::get('user/{id}','API\UserController@show');
-    Route::put('user/{id}','API\UserController@update');
-    Route::patch('user/{id}','API\UserController@update');
-    Route::delete('user/{id}','API\UserController@destroy');
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
 });
-

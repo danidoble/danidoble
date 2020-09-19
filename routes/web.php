@@ -13,11 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index');
-Route::get('/cart', 'HomeController@index')->name('cart');
-Route::get('/blog', 'HomeController@index')->name('blog');
-Route::get('/products', 'HomeController@index')->name('products');
-
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

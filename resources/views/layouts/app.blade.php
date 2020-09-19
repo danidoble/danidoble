@@ -1,41 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+        <title>{{ config('app.name', 'danidoble') }}</title>
 
-    <title>{{ config('app.name', 'Danidoble') }}</title>
+        <!-- Fonts -->
+        <!--link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"-->
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+        @livewireStyles
 
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <style>
-        .gradient {
-            /*background: linear-gradient(90deg, #d53369 0%, #daae51 100%);*/
-            background: linear-gradient(90deg, #0c788c 0%, #b375de 100%);
-            /*background: linear-gradient(90deg, #000000 0%, #757575 100%);*/
-        }
-    </style>
-</head>
-<body class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-    <div id="app">
-        @include('layouts.menu')
-        <div class="mx-auto mt-24 md:mt-18">
-            @yield('content')
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.js" defer></script>
+    </head>
+    <body class="font-sans antialiased leading-normal tracking-normal gradient">
+        <div class="min-h-screen">
+            @livewire('navigation-dropdown')
 
+            @if(isset($header))
+            <!-- Page Heading -->
+            <header class="bg-white shadow">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    {{ $header }}
+                </div>
+            </header>
+            @endif
+
+            <!-- Page Content -->
+            <main>
+                {{ isset($slot) ? $slot : '' }}
+                @yield('content')
+            </main>
+            @include('layouts.footer')
         </div>
-    </div>
-    @include('layouts.footer')
 
-    <script src="{{ asset('js/all.js') }}" defer></script>
-    @yield('scripts')
-</body>
+        @stack('modals')
+
+        @livewireScripts
+    </body>
 </html>
