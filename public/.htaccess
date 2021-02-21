@@ -1,3 +1,20 @@
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+#Redirecciona solamente de http a https
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+#Redirecciona www. a  .
+#RewriteCond %{HTTP_HOST} ^www.%{HTTP_HOST}%{REQUEST_URI} [NC]
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+
+
+#HSTS (HTTP Strict Transport Security)
+<IfModule mod_headers.c>
+Header set Strict-Transport-Security "max-age=10886400; includeSubDomains; preload"
+</IfModule>
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes

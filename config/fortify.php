@@ -2,6 +2,7 @@
 
 use App\Providers\RouteServiceProvider;
 use Laravel\Fortify\Features;
+use Mcamara\LaravelLocalization\LaravelLocalization;
 
 return [
 
@@ -65,6 +66,22 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Fortify Routes Prefix / Subdomain
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify which prefix Fortify will assign to all the routes
+    | that it registers with the application. If necessary, you may change
+    | subdomain under which all of the Fortify routes will be available.
+    |
+    */
+
+    //'prefix' => (new LaravelLocalization)->setLocale(),
+    'prefix' => '',
+
+    'domain' => null,
+
+    /*
+    |--------------------------------------------------------------------------
     | Fortify Routes Middleware
     |--------------------------------------------------------------------------
     |
@@ -74,6 +91,7 @@ return [
     |
     */
 
+    //'middleware' => ['web','localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
     'middleware' => ['web'],
 
     /*
@@ -88,8 +106,22 @@ return [
     */
 
     'limiters' => [
-        'login' => null,
+        'login' => 'login',
+        'two-factor' => 'two-factor',
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Register View Routes
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify if the routes returning views should be disabled as
+    | you may not need them when building your own application. This may be
+    | especially true if you're writing a custom single-page application.
+    |
+    */
+
+    'views' => true,
 
     /*
     |--------------------------------------------------------------------------

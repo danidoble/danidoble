@@ -18,6 +18,23 @@ return [
     'stack' => 'livewire',
 
     /*
+     |--------------------------------------------------------------------------
+     | Jetstream Route Middleware
+     |--------------------------------------------------------------------------
+     |
+     | Here you may specify which middleware Jetstream will assign to the routes
+     | that it registers with the application. When necessary, you may modify
+     | these middleware; however, this default value is usually sufficient.
+     |
+     */
+
+    //'middleware' => ['web','localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+    'middleware' => ['web'],
+    // \vendor\laravel\jetstream\routes\livewire.php
+    //'prefix' => LaravelLocalization::setLocale(),
+    //'prefix' => '',
+
+    /*
     |--------------------------------------------------------------------------
     | Features
     |--------------------------------------------------------------------------
@@ -29,9 +46,24 @@ return [
     */
 
     'features' => [
+        Features::termsAndPrivacyPolicy(),
         Features::profilePhotos(),
         Features::api(),
-        Features::teams(),
+        Features::teams(['invitations' => true]),
+        Features::accountDeletion(),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Profile Photo Disk
+    |--------------------------------------------------------------------------
+    |
+    | This configuration value determines the default disk that will be used
+    | when storing profile photos for your application's users. Typically
+    | this will be the "public" disk but you may adjust this if needed.
+    |
+    */
+
+    'profile_photo_disk' => 'public',
 
 ];

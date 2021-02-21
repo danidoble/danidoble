@@ -8,8 +8,8 @@
     </x-slot>
 
     <x-slot name="content">
-        <div class="max-w-xl text-sm text-gray-600">
-            {{ __('If necessary, you may logout of all of your other browser sessions across all of your devices. If you feel your account has been compromised, you should also update your password.') }}
+        <div class="max-w-full text-sm text-gray-600 dark:text-gray-200 ">
+            {{ __('If necessary, you may logout of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password.') }}
         </div>
 
         @if (count($this->sessions) > 0)
@@ -30,12 +30,12 @@
                         </div>
 
                         <div class="ml-3">
-                            <div class="text-sm text-gray-600">
+                            <div class="text-sm text-gray-600 dark:text-gray-200">
                                 {{ $session->agent->platform() }} - {{ $session->agent->browser() }}
                             </div>
 
                             <div>
-                                <div class="text-xs text-gray-500">
+                                <div class="text-xs text-gray-500 dark:text-gray-400">
                                     {{ $session->ip_address }},
 
                                     @if ($session->is_current_device)
@@ -71,7 +71,8 @@
                 {{ __('Please enter your password to confirm you would like to logout of your other browser sessions across all of your devices.') }}
 
                 <div class="mt-4" x-data="{}" x-on:confirming-logout-other-browser-sessions.window="setTimeout(() => $refs.password.focus(), 250)">
-                    <x-jet-input type="password" class="mt-1 block w-3/4" placeholder="Password"
+                    <x-jet-input type="password" class="mt-1 block w-3/4 dark:text-gray-900"
+                                placeholder="{{ __('Password') }}"
                                 x-ref="password"
                                 wire:model.defer="password"
                                 wire:keydown.enter="logoutOtherBrowserSessions" />
@@ -85,7 +86,9 @@
                     {{ __('Nevermind') }}
                 </x-jet-secondary-button>
 
-                <x-jet-button class="ml-2" wire:click="logoutOtherBrowserSessions" wire:loading.attr="disabled">
+                <x-jet-button class="ml-2"
+                            wire:click="logoutOtherBrowserSessions"
+                            wire:loading.attr="disabled">
                     {{ __('Logout Other Browser Sessions') }}
                 </x-jet-button>
             </x-slot>

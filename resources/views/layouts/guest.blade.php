@@ -8,21 +8,17 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.2.1/dist/alpine.js" defer></script>
+        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <body>
         <div class="font-sans text-gray-900 antialiased">
-            {{ isset($slot) ? $slot : '' }}
-            @yield('content')
-
-            @include('layouts.footer')
+            {{ $slot }}
         </div>
     </body>
 </html>
