@@ -209,7 +209,12 @@ Route::prefix(LaravelLocalization::setLocale())->middleware(['localeSessionRedir
     /**
      * Application
      */
+    //Index
     Route::get('/', [Controllers\IndexController::class,'index'])->name('front.page.index');
+
+    //Contact
+    Route::get('contact', [Controllers\ContactController::class,'create'])->name('front.page.contact');
+    Route::post('contact', [Controllers\ContactController::class,'store'])->name('front.page.contact.post');
 
     Route::get('/blog', [Controllers\BlogController::class,'index'])->name('front.page.blog');
     Route::get('/blog/s/{slug}', [Controllers\BlogController::class,'show'])->name('blog.show.slug');

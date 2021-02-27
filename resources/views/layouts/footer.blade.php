@@ -34,19 +34,19 @@
             </div>
 
             <div class="px-5 py-2">
-                <a href="#" class="text-base text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+                <a href="{{ route('terms.show') }}" class="text-base text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     {{ __('Terms of Service') }}
                 </a>
             </div>
 
             <div class="px-5 py-2">
-                <a href="#" class="text-base text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+                <a href="{{ route('policy.show') }}" class="text-base text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     {{ __('Privacy Policy') }}
                 </a>
             </div>
 
             <div class="px-5 py-2">
-                <a href="#" class="text-base text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
+                <a href="{{ route('front.page.contact') }}" class="text-base text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100">
                     {{ __('Contact') }}
                 </a>
             </div>
