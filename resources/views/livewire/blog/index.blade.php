@@ -17,7 +17,7 @@
                                 </a>
                             @endforeach
                         </p>
-                        <a href="{{ route('blog.show.slug',['slug'=>$entry->slug]) }}" class="block mt-2">
+                        <a href="{{ route('blog.show.slug',['date'=>date('Y-m-d',strtotime($entry->created_at)),'slug'=>$entry->slug]) }}" class="block mt-2">
                             <p class="text-xl font-semibold text-gray-900 dark:text-white">
                                 {{ $entry->name }}
                             </p>

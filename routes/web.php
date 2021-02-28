@@ -217,7 +217,7 @@ Route::prefix(LaravelLocalization::setLocale())->middleware(['localeSessionRedir
     Route::post('contact', [Controllers\ContactController::class,'store'])->name('front.page.contact.post');
 
     Route::get('/blog', [Controllers\BlogController::class,'index'])->name('front.page.blog');
-    Route::get('/blog/s/{slug}', [Controllers\BlogController::class,'show'])->name('blog.show.slug');
+    Route::get('/blog/s/{date}/{slug}', [Controllers\BlogController::class,'show'])->name('blog.show.slug');
 
     Route::get('/products', function () {
         return view('welcome');
@@ -236,6 +236,19 @@ Route::prefix(LaravelLocalization::setLocale())->middleware(['localeSessionRedir
     Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    /**
+     * DASHBOARD
+     */
+    Route::prefix('dash')->middleware(['auth:sanctum', 'verified'])->group(function(){
+        Route::prefix('blog')->group(function(){
+            Route::get('create',[Controllers\BlogController::class,'create'])->name('dash.blog.create');
+            Route::post('store',[Controllers\BlogController::class,'store'])->name('dash.blog.store');
+        });
+
+
+        Route::post('wysi_image',[Controllers\ImageController::class,'store'])->name('dash.image.store');
+    });
 });
 
 
