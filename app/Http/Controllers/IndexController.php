@@ -24,22 +24,22 @@ class IndexController extends Controller
         return view('welcome');
     }
 
-    public function terms(){
-        return view('static.terms-of-service');
-    }
     public function policy(){
-        $policyFile = Jetstream::localizedMarkdownPath('policy.md');
-
-        $environment = Environment::createCommonMarkEnvironment();
-        $environment->addExtension(new GithubFlavoredMarkdownExtension());
-
-        //dd(new CommonMarkConverter([], $environment))->convertToHtml(file_get_contents($policyFile));
-
-        return view('policy', [
-            //'policy' => (new CommonMarkConverter([], $environment))->convertToHtml(file_get_contents($policyFile)),
-        ]);
-        return view('static.privacy-policy');
+        return view('policy');
     }
 
+    public function terms(){
+        return view('terms');
+    }
+
+    public function credits(){
+        return view('static.credits');
+    }
+    public function faq(){
+        return view('static.faq');
+    }
+    public function about(){
+        return view('static.about');
+    }
 
 }

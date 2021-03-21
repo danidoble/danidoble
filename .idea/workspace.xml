@@ -2,153 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f53a99b1-1dc9-44e8-8913-330053405dc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_28_180244_create_images_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/ImageSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/wisy/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/ckeditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/ckeditor.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/de-ch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/en-au.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/en-gb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/eo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/gu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/kk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/km.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/kn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ku.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/oc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/pt-br.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/si.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/sq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/sr-latn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/tk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/tt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/ug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/ck/translations/zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/froala_editor.pkgd.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/froala_editor.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/froala_style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins.pkgd.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/align.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/char_counter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/code_beautifier.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/code_view.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/colors.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/draggable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/edit_in_popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/emoticons.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/entities.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/file.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/files_manager.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/font_family.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/font_size.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/forms.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/fullscreen.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/help.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/image.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/image_manager.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/inline_class.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/inline_style.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/line_breaker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/line_height.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/link.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/lists.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/paragraph_format.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/paragraph_style.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/print.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/quick_insert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/quote.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/save.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/special_characters.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/table.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/url.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/video.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/plugins/word_paste.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/tp/image_tui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/wisy/froala/tp/spell_checker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dash/blog/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dash.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/static/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/static/credits.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/static/faq.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ContactForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ContactFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ContactFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_27_181004_create_contacts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_27_181004_create_contacts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ContactSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ContactSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/es.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/blog/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/privacy-policy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/privacy-policy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/terms-of-service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/terms-of-service.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/button.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/button.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/message.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/message.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/subcopy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/subcopy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/text/table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/table.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dash/blog/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dash/blog/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/policy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/policy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/terms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/terms.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,6 +180,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -334,7 +209,9 @@
       <workItem from="1614396562252" duration="2514000" />
       <workItem from="1614447083998" duration="7782000" />
       <workItem from="1614529538570" duration="464000" />
-      <workItem from="1614530502551" duration="14876000" />
+      <workItem from="1614530502551" duration="15120000" />
+      <workItem from="1615825201373" duration="11000" />
+      <workItem from="1616283402734" duration="8440000" />
     </task>
     <servers />
   </component>

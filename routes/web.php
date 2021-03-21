@@ -182,8 +182,8 @@ Route::prefix(LaravelLocalization::setLocale())->middleware(['localeSessionRedir
      */
     Route::group(['middleware' => config('jetstream.middleware', ['web'])], function () {
         if (Jetstream::hasTermsAndPrivacyPolicyFeature()) {
-            Route::get('/terms-of-service', [TermsOfServiceController::class, 'show'])->name('terms.show');
-            Route::get('/privacy-policy', [PrivacyPolicyController::class, 'show'])->name('policy.show');
+            Route::get('/terms-of-service', [Controllers\IndexController::class, 'terms'])->name('terms.show');
+            Route::get('/privacy-policy', [Controllers\IndexController::class, 'policy'])->name('policy.show');
         }
 
         Route::group(['middleware' => ['auth', 'verified']], function () {
@@ -211,6 +211,10 @@ Route::prefix(LaravelLocalization::setLocale())->middleware(['localeSessionRedir
      */
     //Index
     Route::get('/', [Controllers\IndexController::class,'index'])->name('front.page.index');
+
+    Route::get('credits', [Controllers\IndexController::class,'credits'])->name('front.page.credits');
+    Route::get('FAQ', [Controllers\IndexController::class,'faq'])->name('front.page.faq');
+    Route::get('about', [Controllers\IndexController::class,'about'])->name('front.page.about');
 
     //Contact
     Route::get('contact', [Controllers\ContactController::class,'create'])->name('front.page.contact');
