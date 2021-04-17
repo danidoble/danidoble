@@ -83,6 +83,16 @@
 
                                 <x-slot name="content">
                                     <div class="w-60">
+                                        <!-- Go to dashboard -->
+                                        <div class="block px-4 py-2 text-xs text-gray-400">
+                                            {{ __('Dashboard') }}
+                                        </div>
+
+                                        <!-- Team Settings -->
+                                        <x-jet-dropdown-link href="{{ route('dashboard') }}">
+                                            {{ __('Dashboard') }}
+                                        </x-jet-dropdown-link>
+
                                         <!-- Team Management -->
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             {{ __('Manage Team') }}
