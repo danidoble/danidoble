@@ -1,3 +1,4 @@
+require('intersection-observer');
 window._ = require('lodash');
 
 /**

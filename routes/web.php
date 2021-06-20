@@ -223,13 +223,11 @@ Route::prefix(LaravelLocalization::setLocale())->middleware(['localeSessionRedir
     Route::get('/blog', [Controllers\BlogController::class,'index'])->name('front.page.blog');
     Route::get('/blog/s/{date}/{slug}', [Controllers\BlogController::class,'show'])->name('blog.show.slug');
 
-    Route::get('/products', function () {
-        return view('welcome');
-    })->name('front.page.products');
+    Route::get('/products', [Controllers\ProductController::class,'index'])->name('front.page.products');
+    Route::get('/products/s/{date}/{slug}', [Controllers\ProductController::class,'show'])->name('products.show.slug');
 
-    Route::get('/news', function () {
-        return view('welcome');
-    })->name('front.page.news');
+    Route::get('/news', [Controllers\NewsController::class,'index'])->name('front.page.news');
+    Route::get('/news/s/{date}/{slug}', [Controllers\NewsController::class,'show'])->name('news.show.slug');
 
 
     Route::get('test', function () {

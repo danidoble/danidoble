@@ -2,8 +2,8 @@ AddType image/svg+xml svg svgz
 AddEncoding gzip svgz
 
 #Redirecciona solamente de http a https
-#RewriteCond %{HTTPS} !=on
-#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 #Redirecciona www. a  .
 #RewriteCond %{HTTP_HOST} ^www.%{HTTP_HOST}%{REQUEST_URI} [NC]
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]

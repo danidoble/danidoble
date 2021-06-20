@@ -8,8 +8,10 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
         <!-- Styles -->
+        @yield('pre_css')
         <link rel="stylesheet" href="{{ asset(mix('css/app.css')) }}">
         @livewireStyles
+        @yield('css')
         <!-- Scripts -->
         <script src="{{ asset(mix('js/app.js')) }}" defer></script>
         <script>
@@ -45,8 +47,12 @@
         @stack('modals')
 
         @livewireScripts
+        @yield('scripts')
 
         <script>
+            document.addEventListener('DOMContentLoaded',function(e){
+                lazyLoadInstance.update();
+            })
             btn_switch_theme = document.querySelectorAll('.btn-switch-theme');
             for(let i=0;i<btn_switch_theme.length;i++){
                 btn_switch_theme[i].addEventListener('click',(e)=>{
