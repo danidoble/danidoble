@@ -56,5 +56,6 @@
         document.getElementById('btn-moon-theme').classList.remove('hidden');
     }
 </script>
+<script src="{{ asset(mix('js/custom.js')) }}" defer></script>
 </body>
 </html>

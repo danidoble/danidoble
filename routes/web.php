@@ -246,6 +246,12 @@ Route::prefix(LaravelLocalization::setLocale())->middleware(['localeSessionRedir
         Route::prefix('blog')->group(function(){
             Route::get('create',[Controllers\BlogController::class,'create'])->name('dash.blog.create');
             Route::post('store',[Controllers\BlogController::class,'store'])->name('dash.blog.store');
+
+            Route::get('list',[Controllers\BlogController::class,'dashIndex'])->name('dash.blog.list');
+
+            Route::get('edit/{id}',[Controllers\BlogController::class,'edit'])->name('dash.blog.edit');
+            Route::post('update',[Controllers\BlogController::class,'update'])->name('dash.blog.update');
+
         });
 
 

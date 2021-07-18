@@ -6,8 +6,11 @@
                 <div class="w-full rounded-md bg-green-50 p-4 my-2">
                     <div class="flex">
                         <div class="flex-shrink-0">
-                            <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            <svg class="h-5 w-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                 fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                      clip-rule="evenodd"/>
                             </svg>
                         </div>
                         <div class="ml-3">
@@ -21,7 +24,8 @@
                             </div>
                             <div class="mt-4">
                                 <div class="-mx-2 -my-1.5 flex">
-                                    <a href="{{ session('url_entry') }}" class="bg-green-300 px-2 py-1.5 rounded-md text-sm font-medium text-green-800 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-400 focus:ring-green-600">
+                                    <a href="{{ session('url_entry') }}"
+                                       class="bg-green-300 px-2 py-1.5 rounded-md text-sm font-medium text-green-800 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-400 focus:ring-green-600">
                                         {{ __('Go to entry') }}
                                     </a>
                                 </div>
@@ -57,7 +61,7 @@
                     <div class="md:col-span-2">
                         <div class="px-4 sm:px-0">
                             <label for="comment"
-                                   class="dark:text-white text-lg font-medium leading-6 text-gray-900">{{ __('Comments?') }}</label>
+                                   class="dark:text-white text-lg font-medium leading-6 text-gray-900">{{ __('Allow comments?') }}</label>
                             <select name="comment" id="comment"
                                     class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-md sm:text-sm border-gray-300">
                                 <option value="0">{{ __('Disable') }}</option>
@@ -69,8 +73,8 @@
                         <div class="px-4 sm:px-0">
                             <label for="tags"
                                    class="dark:text-white text-lg font-medium leading-6 text-gray-900">{{ __('Tags') }}</label>
-                            <input type="text" name="tags" id="tags"
-                                   class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-md sm:text-sm border-gray-300">
+                            <input type="text" name="tags" id="tags" placeholder="{{ __("Tags") }}"
+                                   class="tagify focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-md sm:text-sm border-gray-300 dark:bg-white bg-white">
                         </div>
                     </div>
 
@@ -89,29 +93,23 @@
                             <label class="block text-sm font-medium text-gray-700 dark:text-white ">
                                 {{ __('Image preview') }}
                             </label>
-                            <div
-                                class="mt-1 flex justify-center bg-white px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                                <div class="space-y-1 text-center">
-                                    <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
-                                         viewBox="0 0 48 48" aria-hidden="true">
-                                        <path
-                                            d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <div class="flex text-sm text-gray-600">
-                                        <label for="preview_image"
-                                               class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                            <span>{{ __('Upload a file') }}</span>
-                                            <input id="preview_image" name="preview_image" type="file" class="sr-only"
-                                                   required>
-                                        </label>
-
-                                    </div>
-                                    <p class="text-xs text-gray-500">
-                                        PNG, JPG, GIF, WEBP, SVG up to 2MB
-                                    </p>
-                                </div>
-                            </div>
+                            <label for="preview_image"
+                                   class="cursor-pointer relative block w-full border-2 border-gray-300 border-dashed rounded-lg pt-0 px-0 pb-12 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <img id="preview-preview_image" alt="Preview" class="hidden w-full max-w-xl mb-6 mx-auto">
+                                <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
+                                     viewBox="0 0 48 48" aria-hidden="true">
+                                    <path
+                                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span
+                                    class="mt-2 block text-sm font-medium text-gray-900 dark:text-gray-50"><span>{{ __('Upload a file') }}</span></span>
+                                <span class="text-xs text-gray-500 dark:text-gray-400">
+                                    PNG, JPG, GIF, WEBP, SVG {{ __('up to') }} 5MB
+                                </span>
+                                <input id="preview_image" name="preview_image" type="file" class="sr-only img-dd-preview"
+                                       required>
+                            </label>
                         </div>
                     </div>
 

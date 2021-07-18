@@ -70,7 +70,7 @@
                                 </div>
                                 <div>
                                     @if($entry->created_at->diffForHumans(null, false, false, 2) !== $entry->updated_at->diffForHumans(null, false, false, 2) )
-                                        Modificado {{ $entry->updated_at->diffForHumans() }}
+                                        {{ __('Updated') }} {{ $entry->updated_at->diffForHumans() }}
                                     @endif
                                 </div>
                             </div>

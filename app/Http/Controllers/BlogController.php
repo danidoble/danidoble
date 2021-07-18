@@ -28,6 +28,17 @@ class BlogController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return Application|Factory|View
+     */
+    public function dashIndex()
+    {
+        return view('dash.blog.index');
+    }
+
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return Application|Factory|View
@@ -114,9 +125,12 @@ class BlogController extends Controller
      * @param Blog $blog
      * @return Response
      */
-    public function edit(Blog $blog)
+    public function edit($id)
     {
-        //
+        $entry = Blog::findOrFail($id);
+        return view('dash.blog.edit',[
+            'entry'=>$entry
+        ]);
     }
 
     /**

@@ -289,5 +289,18 @@
     "Entries posted": "Entradas publicadas",
     "Products posted": "Productos publicados",
     "News posted": "Noticias publicadas",
-    "Nothing to show": "No hay nada que mostrar"
+    "Nothing to show": "No hay nada que mostrar",
+    "Draft": "Borrador",
+    "Allow": "Permitir",
+    "Allow comments?": "¿Permitir comentarios?",
+    "Tags": "Etiquetas",
+    "Status": "Estado",
+    "Publish": "Publicar",
+    "Preview content": "Vista previa del contenido",
+    "Image preview": "Imagen de vista previa",
+    "up to": "hasta",
+    "Upload a file": "Subir un archivo",
+    "Content": "Contenido",
+    "Edit": "Editar",
+    "By": "Por"
 }

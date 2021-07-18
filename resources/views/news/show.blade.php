@@ -21,7 +21,7 @@
                     <ul class="mt-8 mb-4 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
                         <li class="col-span-1 flex flex-col text-center bg-white dark:bg-gray-700 rounded-lg shadow divide-y divide-gray-200 dark:divide-gray-900">
                             <div class="flex-1 flex flex-col p-8">
-                                <img class="w-32 h-32 flex-shrink-0 mx-auto bg-transparent rounded-full" src="{{ str_replace('&background=','&size=128&background=',$entry->owner->profile_photo_url) }}" alt="{{ Auth::User()->name }}">
+                                <img class="w-32 h-32 flex-shrink-0 mx-auto bg-transparent rounded-full" src="{{ str_replace('&background=','&size=128&background=',$entry->owner->profile_photo_url) }}" alt="{{ $entry->owner->name }}">
                                 <h3 class="mt-6 text-gray-900 dark:text-gray-100 text-sm font-medium">{{ mb_convert_case($entry->owner->name,MB_CASE_TITLE,'UTF-8') }}</h3>
                                 <dl class="mt-1 flex-grow flex flex-col justify-between">
                                     <dt class="sr-only">Role</dt>
