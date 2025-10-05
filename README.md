@@ -1,22 +1,19 @@
-# ¡Hola! Soy danidoble 👋
+# Hello! I'm danidoble 👋
 
-## 🚀 Sobre Mí
+## 🚀 About Me
+I'm Daniel Sandoval, a Full-Stack Developer passionate about creating innovative solutions through programming.
 
-Soy Daniel Sandoval, un Desarrollador Full-Stack apasionado por crear soluciones innovadoras con programación
+With over 5 years of experience in web development, I enjoy transforming complex ideas into functional and attractive products and experiences.
 
-Con más de 5 años de experiencia en desarrollo web, disfruto transformando ideas complejas en productos y experiencias funcionales y atractivas.
+My Interests
+* Continuous learning of new technologies
+* Contributing to open-source projects
+* Solving complex problems with elegant solutions
 
-Mis Intereses
+## 🛠 Skills
+Here's a glimpse of the technologies and tools I work with:
 
-* Aprendizaje continuo de nuevas tecnologías
-* Contribuir a proyectos de código abierto
-* Resolver problemas complejos con soluciones elegantes
-
-## 🛠 Habilidades
-Aquí tienes un vistazo a las tecnologías y herramientas con las que trabajo:
-
-### Lenguajes de Programación
-
+### Programming Languages
 * Javascript
 * PHP
 * SQL
@@ -24,8 +21,7 @@ Aquí tienes un vistazo a las tecnologías y herramientas con las que trabajo:
 * Python
 * C, C++
 
-### Frameworks y Librerías
-
+### Frameworks and Libraries
 * React
 * Laravel
 * Daisyui
@@ -33,72 +29,70 @@ Aquí tienes un vistazo a las tecnologías y herramientas con las que trabajo:
 * Node.js (Express)
 * Nextjs
 
-### Bases de Datos
-
+### Databases
 * MySQL/MariaDB
 * SQLite
 
-### Herramientas y Otros
-
+### Tools and Others
 * Git
 * Docker
 
-## 🚀 Proyectos Destacados
-Aquí te presento algunos de los proyectos en los que he trabajado. Puedes explorar sus repositorios para ver el código y más detalles:
+## 🚀 Featured Projects
+Here are some of the projects I've worked on. You can explore their repositories to see the code and more details:
 
 ### WebSerial Core
-Descripción: Un Wrapper de Webserial API para conexion con dispositivos seriales mas fácil y con manejo de colas
+Description: A Webserial API Wrapper for easier connection with serial devices and queue management
 
-Características Clave: 
-* Manejo de colas
-* Multiples dispositivos
+Key Features: 
+* Queue management
+* Multiple devices
 
-Tecnologías: 
+Technologies: 
 * Typescript
 * WebSerial API
 
-Enlace: [Ir al repositorio del proyecto](https://github.com/danidoble/webserial-core)
+Link: [Go to project repository](https://github.com/danidoble/webserial-core)
 
 ### Webserial
-Descripción: Es un wrapper para manejar dispositivos seriales ya predefinidos, donde su principal utilidad es en vending
+Description: A wrapper for handling predefined serial devices, primarily useful for vending
 
-Características Clave: 
-* Multi dispositivo
+Key Features: 
+* Multi-device
 * Vending
 
-Tecnologías: 
+Technologies: 
 * Javascript
 
-Enlace: [Ir al repositorio del proyecto](https://github.com/danidoble/webserial) | [Ir a la demo](http://webserial-demo.danidoble.com/)
+Link: [Go to project repository](https://github.com/danidoble/webserial) | [Go to demo](http://webserial-demo.danidoble.com/)
 
 ### Coincitymexico.com
+Description: Company website development
 
-Descripción: Se realizó el sitio web de la empresa
-
-Características Clave: 
-* Carrito
+Key Features: 
+* Shopping cart
 * CMS
-* Pago en linea
+* Online payment
 
-Tecnologías: 
+Technologies: 
 * PHP
 * Laravel
 * Javascript
 
-### Otras menciones
-
+### Other mentions
 [toast](https://www.npmjs.com/package/@danidoble/toast)
+
 [exitkiosk](https://github.com/danidoble/exitkiosk)
+
 [redirector](https://github.com/danidoble/redirector)
 
-📫 ¿Conectamos?
-Siempre estoy abierto(a) a nuevas oportunidades, colaboraciones o simplemente para charlar sobre tecnología. ¡No dudes en contactarme!
-(Ten paciencia que suelo estar algo ocupado)
+## 📫 Let's Connect?
+I'm always open to new opportunities, collaborations, or simply chatting about technology. Don't hesitate to contact me!
+(Please be patient as I'm usually quite busy)
 
 [LinkedIn](https://www.linkedin.com/in/luis-daniel-s-2a4b33105/)
 
 [Email](mailto:info@danidoble.com)
 
-[Mi Sitio Web](https://danidoble.com)
+[My Website](https://danidoble.com)
 
 [Twitter/X](https://x.com/danidoble1)
